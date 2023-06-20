@@ -1,4 +1,4 @@
-# **Programming
+# Programming
 <div align="center">
 <img width = 45% src = "https://i0.wp.com/ensedeciencia.com/wp-content/uploads/2022/03/Python-P.jpg?resize=800%2C451&ssl=1">
 </div>  
