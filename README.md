@@ -7,8 +7,8 @@
 Repositorie dedicated to the first year subjects of higher grade training cycle of web development. It will be structured in different folders for each subject with their examples, notes, excercises and mini-projects.  
 
 ## Subjects
-- Programming: Subject dedicated to learn programmig from 0. We are going to use Python language and we will learn from [aprendepython](https://aprendepython.es/), a web/course made by our [teacher](https://github.com/sdelquin).
-- Database: Subject dedicated to learn about databases. We are going to start with diagram and analysis and then starting with SQL and relationals databases. [Teacher](https://github.com/jpexposito).  
+- [Programming](pro/README.md): Subject dedicated to learn programmig from 0. We are going to use Python language and we will learn from [aprendepython](https://aprendepython.es/), a web/course made by our [teacher](https://github.com/sdelquin).
+- [Database](ddbb/README.md): Subject dedicated to learn about databases. We are going to start with diagram and analysis and then starting with SQL and relationals databases. [Teacher](https://github.com/jpexposito).  
 - Computer systems: Subject dedicated to learn about things as hardware, software, administration of operative systems, networking...  
 - Development enviroments: Subject dedicated to learn about all things that complement the work of programming as IDE's, diagrams before programming. Also we will manage a simulation of a project.
 - Markup languages: Subject dedicated to learn about markup languages and some tools about frontend development.  
