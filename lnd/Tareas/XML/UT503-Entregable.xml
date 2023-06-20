@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE receta [
+    <!ELEMENT receta (nombre*)>
+    <!ELEMENT nombres (comida,ingrediente*,instrucciones)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ingrediente (#PCDATA)>
+    <!ELEMENT instrucciones (#PCDATA)>
+    <!ATTLIST comida raciones CDATA #IMPLIED>
+    <!ATTLIST comida dificulad (baja|media|alta) #FIXED "media">
+    <!ATTLIST ingrediente cantidad CDATA #IMPLIED>
+    <!ATTLIST ingrediente unidad CDATA #IMPLIED>
+]>
+
+<receta>
+    <comida raciones="1" dificultad="alta">
+        <nombre>Tallarines carbonara</nombre>
+        <ingrediente cantidad="100" unidad="gramos">Bacon</ingrediente>
+        <ingrediente cantidad="250" unidad="mililitros">Nata</ingrediente>
+        <ingrediente cantidad="300" unidad="gramos">Tallarines</ingrediente>
+        <instrucciones>Lorem ipsum....</instrucciones>
+    </comida>
+    <comida raciones="2" dificultad="baja">
+        <nombre>Sandwich Mixto</nombre>
+        <ingrediente cantidad="2" unidad="loncha">Queso</ingrediente>
+        <ingrediente cantidad="2" unidad="Loncha">Jamón</ingrediente>
+        <ingrediente cantidad="2" unidad="Rebanadas">Pan de Molde</ingrediente>
+        <instrucciones>Lorem ipsum.....</instrucciones>
+    </comida>
+</receta>

@@ -1,0 +1,75 @@
+<!-- VERSIÓN SIN ATRIBUTOS -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT partido (juego*)>
+<!ELEMENT juego (local, visitante)>
+<!ELEMENT local (equipo, goles)>
+<!ELEMENT visitante (equipo, goles)>
+<!ELEMENT equipo (#PCDATA)>
+<!ELEMENT goles (#PCDATA)>
+]>
+
+<partido>
+    <juego>
+        <local>
+            <equipo>Vodka Juniors</equipo>
+            <goles>3</goles>
+        </local>
+        <visitante>
+            <equipo>Sparta da Risa</equipo>
+            <goles>3</goles>
+        </visitante>
+    </juego>
+</partido>
+
+
+
+
+<!-- VERSIÓN CON GOLES COMO ATRIBUTOS -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT partido (juego*)>
+<!ELEMENT juego (local, visitante)>
+<!ELEMENT local (equipo)>
+<!ELEMENT equipo (#PCDATA)>
+<!ELEMENT visitante (equipo)>
+<!ELEMENT equipo (#PCDATA)>
+<!ATTLIST equipo uniforme CDATA #IMPLIED>
+<!ATTLIST equipo goles CDATA #IMPLIED>
+]>
+
+<partido>
+    <juego>
+        <local>
+            <equipo uniforme="Verde" goles="3">Vodka Juniors</equipo>
+        </local>
+        <visitante>
+            <equipo uniforme="Blanco" goles="3">Sparta da Risa</equipo>
+        </visitante>
+    </juego>
+</partido>
+
+
+
+
+<!-- VERSIÓN CON TODO COMO ATRIBUTOS -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT partido (juego*)>
+<!ELEMENT juego (local, visitante)>
+<!ELEMENT local EMPTY>
+<!ELEMENT visitante EMPTY>
+<!ATTLIST local equipo CDATA #IMPLIED>
+<!ATTLIST local uniforme CDATA #IMPLIED>
+<!ATTLIST local goles CDATA #IMPLIED>
+<!ATTLIST visitante equipo CDATA #IMPLIED>
+<!ATTLIST visitante uniforme CDATA #IMPLIED>
+<!ATTLIST visitante goles CDATA #IMPLIED>
+]>
+
+<partido>
+    <juego>
+        <local equipo="Vodka Juniors" uniforme="Verde" goles="3" />
+        <visitante equipo="Inter de Mitente" uniforme="Blanco" goles="3" />
+    </juego>
+</partido>

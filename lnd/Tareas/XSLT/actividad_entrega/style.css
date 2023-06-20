@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    text-align: justify;
+}
+
+header {
+    background-color: #DDDD80;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    padding-top: 10px;
+    color: #007B3E;
+    text-align: center;
+    margin: 0;
+}
+
+header h5 {
+    color: #007B3E;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+#cabeceradescrip h1 {
+    color: #333;
+    text-align: center;
+}
+
+#cabeceradescrip p {
+    color: #333;
+    text-align: justify;
+}
+
+receta {
+    color: #333;
+    text-align: justify;
+    padding-left: 20px;
+    margin-left: 50px;
+}
+
+receta p {
+    color: #333;
+    text-align: justify;
+}
+
+th {
+    height: 50px;
+    background-color: #DDDD80;
+    color: #007B3E;
+    border-collapse: separate;
+    border: #C5DD80 3px solid;
+}
+
+h3 {
+    color: #007B3E;
+    text-align: justify;
+}
+
+h4 {
+    color: #007B3E;
+    font-weight: bold;
+    text-align: justify;
+}
+
+caption {
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacto>
+	<nombre género="Masculino">
+		<nombre>Adrián</nombre>
+		<apellido>Herrera</apellido>
+	</nombre>
+	<apellido>Herrera</apellido>
+	<dirección>La Orotava, Calle Palomares Nº6</dirección>
+	<telefono>634218465</telefono>
+	<prueba><![CDATA["Hola esto > es una prueba &]]></prueba>
+</contacto>
+

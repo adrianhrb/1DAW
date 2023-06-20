@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página hotel</title>
+    <link rel="stylesheet" type="text/css" href="hotel.css">
+</head>
+<body>
+    <header>
+        <h1 id="prin">HOTEL VILLA OROTAVA</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href=#Info>Sobre nosotros</a></li>
+            <li><a href=#Ubi>¿Dónde estamos?</a></li>
+            <li><a href=#Rese>Reserva</a></li>
+            <li><a href=#Conta>Contacto</a></li>
+        </ul>
+    </nav>
+    <h1 id="sec">Conoce la villa con nosotros</h1>
+    <div id="center">
+    <img src="img/_la-orotava-tenerife-islas-canarias-espa¤a_26136958_detail.jpg"> 
+    </div>
+    <br>
+    <h2><a name="Info">Quienes somos</a></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit quis, curabitur justo urna euismod facilisi senectus conubia, lacus varius sagittis commodo sollicitudin tortor massa. Convallis nam natoque auctor cursus vitae est placerat nibh facilisi nisl, tincidunt litora himenaeos non dictum pharetra pellentesque montes tempus torquent duis, quisque varius feugiat sed orci scelerisque mauris felis cras. Urna aenean elementum mi nisl lectus tellus bibendum per fermentum, velit leo himenaeos senectus commodo lacinia mollis eu primis, netus quis sapien sagittis vitae pretium torquent arcu.
+
+        Vulputate ullamcorper cum diam dapibus quis curae maecenas accumsan, posuere at hac ultrices placerat penatibus primis, turpis quam habitasse vehicula eleifend blandit ultricies. Condimentum fringilla taciti netus accumsan aliquam suspendisse eros, risus vulputate eleifend imperdiet mattis dui, orci vestibulum enim tristique nostra augue. Malesuada congue augue penatibus ante laoreet in velit mus, eleifend orci magnis mattis commodo risus dapibus condimentum, blandit dignissim cursus nec tempor ac potenti.
+    </p>
+    <br>
+    <h2><a name="Ubi">¿Dónde estamos?</a></h2>
+    <p><a href="https://www.google.com/maps/place/La+Orotava,+Santa+Cruz+de+Tenerife/@28.3929251,-16.5184571,15z/data=!3m1!4b1!4m5!3m4!1s0xc402aae32ddf575:0x27206a076b427988!8m2!3d28.3892926!4d-16.525264">
+      Lorem ipsum dolor</a> sit amet consectetur adipiscing elit quis, curabitur justo urna euismod facilisi senectus conubia, lacus varius sagittis commodo sollicitudin tortor massa. Convallis nam natoque auctor cursus vitae est placerat nibh facilisi nisl, tincidunt litora himenaeos non dictum pharetra pellentesque montes tempus torquent duis, quisque varius feugiat sed orci scelerisque mauris felis cras. Urna aenean elementum mi nisl lectus tellus bibendum per fermentum, velit leo himenaeos senectus commodo lacinia mollis eu primis, netus quis sapien sagittis vitae pretium torquent arcu.
+
+Vulputate ullamcorper cum diam dapibus quis curae maecenas accumsan, posuere at hac ultrices placerat penatibus primis, turpis quam habitasse vehicula eleifend blandit ultricies. Condimentum fringilla taciti netus accumsan aliquam suspendisse eros, risus vulputate eleifend imperdiet mattis dui, orci vestibulum enim tristique nostra augue. Malesuada congue augue penatibus ante laoreet in velit mus, eleifend orci magnis mattis commodo risus dapibus condimentum, blandit dignissim cursus nec tempor ac potenti.
+    </p>
+    <br>
+    <h2><a name="Rese">Reserva ya</a></h2>
+    <form>
+        <fieldset id="uno">
+            <legend>DATOS</legend>
+            <p>Nombre:<input type="text"></p>
+            <p>Apellidos: <input type="text"></p>
+            <p>Número de contacto: <input type="text" maxlength="9" placeholder="Ej: 687143981"></p>
+            <p>Noches: <select>
+                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>+7</option>
+            </select></p>
+        </fieldset>
+        <br>
+        <fieldset id="dos">
+            <legend>SOBRE LA RESERVA</legend>
+            <p>Qué tipo de habitación quiere seleccionar:<br>
+                Simple<input type="radio"><br>
+                Doble <input type="radio">
+            </p>
+            <p>Día de entrada <input type="date"></p>
+            <p>Hora de check-in 
+                <select>
+                    <option></option>
+                    <option>10:00</option>
+                    <option>12:30</option>
+                    <option>15:00</option>
+                    <option>19:00</option>
+                </select>
+            </p>
+            <p>Servicios que solicita:<br>
+                Desayuno<input type="checkbox"><br>
+                Comida <input type="checkbox"><br>
+                Cena <input type="checkbox"><br>
+                Cama supletoria <input type="checkbox">
+            </p>
+            <br>
+            <p>¿Quieres incluir algo más en tu reserva?<br>
+                <textarea name="extra" placeholder="Dejar en blanco si no se desean extras"></textarea>
+            </p>
+            <p><input type="submit" value="Reservar"><input type="reset" value="Eliminar datos"></p>
+        </fieldset>
+    </form>
+    <br>
+    <h2 id="Conta"><a name="Conta">Contáctanos!</a></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit quis, curabitur justo urna euismod facilisi senectus conubia, lacus varius sagittis commodo sollicitudin tortor massa. Convallis nam natoque auctor cursus vitae est placerat nibh facilisi nisl, tincidunt litora himenaeos non dictum pharetra pellentesque montes tempus torquent duis, quisque varius feugiat sed orci scelerisque mauris felis cras. Urna aenean elementum mi nisl lectus tellus bibendum per fermentum, velit leo himenaeos senectus commodo lacinia mollis eu primis, netus quis sapien sagittis vitae pretium torquent arcu.
+
+        Vulputate ullamcorper cum diam dapibus quis curae maecenas accumsan, posuere at hac ultrices placerat penatibus primis, turpis quam habitasse vehicula eleifend blandit ultricies. Condimentum fringilla taciti netus accumsan aliquam suspendisse eros, risus vulputate eleifend imperdiet mattis dui, orci vestibulum enim tristique nostra augue. Malesuada congue augue penatibus ante laoreet in velit mus, eleifend orci magnis mattis commodo risus dapibus condimentum, blandit dignissim cursus nec tempor ac potenti.</p>
+</body>
+</html>

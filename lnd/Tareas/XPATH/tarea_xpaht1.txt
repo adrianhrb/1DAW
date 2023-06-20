@@ -1,0 +1,18 @@
+Ejercicio 1:
+    1. /ies/nombre
+    2. /ies/web
+    3. /ies/ciclos/ciclo/nombre
+    4. /ies/ciclos/ciclo/@id
+    5. /ies/ciclos/ciclo/decretoTitulo
+    6. /ies/ciclos/ciclo
+    7. /ies/ciclos/ciclo[grado='Superior']
+    8. /ies/ciclos/ciclo/decretoTitulo[@año < 2010]
+    9. /ies/ciclos/ciclo/decretoTitulo[@año = 2010 or @año = 2008]
+
+Ejercicio 2:
+    1. /ies/modulos/modulo/nombre
+    2. /ies/modulos/modulo[ciclo = 'ASIR']
+    3. /ies/modulos/modulo[curso = 2]/nombre
+    4. /ies/modulos/modulo[horasSemanales < 5]/nombre
+    5. /ies/modulos/modulo[ciclo = 'ASIR' and curso = 1]/nombre
+    6. /ies/modulos/modulo[horasSemanales > 3]/horasSemanales

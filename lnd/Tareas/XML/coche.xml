@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario>
+    <coche>
+        <marca>Mercedes</marca>
+        <modelo>Project One</modelo>
+        <motor>F1 2016</motor>
+        <matricula>1421MFL</matricula>
+        <kilometros>20000</kilometros>
+        <precio_original>3000000</precio_original>
+        <precio_oferta>1500000</precio_oferta>
+        <extras>Mantenimiento extendido</extras>
+        <fotos>fotopng</fotos>
+    </coche>
+        <coche>
+        <marca>Dacia</marca>
+        <modelo>Sandero</modelo>
+        <motor>Renault</motor>
+        <matricula>1321DFL</matricula>
+        <kilometros>50000</kilometros>
+        <precio_original>10000</precio_original>
+        <precio_oferta>7500</precio_oferta>
+        <extras/>
+        <fotos>fotopng</fotos>
+    </coche>
+        <coche>
+        <marca>Hyundai</marca>
+        <modelo>i20</modelo>
+        <motor>Hyundai</motor>
+        <matricula>3456ABC</matricula>
+        <kilometros>300</kilometros>
+        <precio_original>16000</precio_original>
+        <precio_oferta>14000</precio_oferta>
+        <extras>Camara trasera</extras>
+        <fotos>fotopng</fotos>
+    </coche>
+</concesionario>

@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+body {
+    padding: 10px;
+    background: #ffffff;
+  }
+  
+
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    color:white;
+    text-shadow: 0 0.3rem 0.7rem black;
+  }
+  
+header h1 {
+    font-size: 5rem;
+    text-shadow: 0 0.3rem 0.5rem black;
+  }
+
+.logo {
+    height: 3rem;
+    margin: 0 auto;
+}
+
+
+nav {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+
+nav a {
+    float: left;
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+nav a:hover {
+    background-color: red;
+    color: white;
+  }
+  
+ .contac {
+  float: right;
+ }
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+ 
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0.3rem 0.7rem black;
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: red;
+    margin-top: 20px;
+  }
+
+  footer a:link {
+    text-decoration: none;
+    color:white;
+    text-align: left;
+    padding: 10px 10px;
+  }
+
+  footer a:visited {
+    text-decoration: none;
+    color: white;
+    background-color: white;
+  }
+
+  footer a:hover{
+    background-color: white;
+    color: red;
+  }
+ 
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }

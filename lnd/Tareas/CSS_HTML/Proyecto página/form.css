@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+   background-image: url(img/fondo.png);
+}
+
+header {
+    background-color: rgb(76, 0, 255);
+    padding: 2rem;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0.3rem 0.5rem black;
+    display: flexbox;
+    text-align: center;
+}
+
+nav ul {
+  background-color: white;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+nav li {
+  display: inline-flex;
+}
+nav a {
+  text-decoration: none;
+  color: black ;
+  padding: 10px;
+  width: 150px;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    margin: 100px auto;
+    width: 35%;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.formulario {
+    text-align: center;
+    border: 0.2rem solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+}
+
+.envio {
+    background-color: rgb(76, 0, 255);
+    color: white;
+    font-weight: bold;
+    height: 2rem;
+    width: 9rem;
+    border-radius: 1rem;
+}

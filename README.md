@@ -9,9 +9,9 @@ Repositorie dedicated to the first year subjects of higher grade training cycle 
 ## Subjects
 - [Programming](pro/README.md): Subject dedicated to learn programmig from 0. We are going to use Python language and we will learn from [aprendepython](https://aprendepython.es/), a web/course made by our [teacher](https://github.com/sdelquin).
 - [Database](ddbb/README.md): Subject dedicated to learn about databases. We are going to start with diagram and analysis and then starting with SQL and relationals databases. [Teacher](https://github.com/jpexposito).  
-- Computer systems: Subject dedicated to learn about things as hardware, software, administration of operative systems, networking...  
-- Development enviroments: Subject dedicated to learn about all things that complement the work of programming as IDE's, diagrams before programming. Also we will manage a simulation of a project.
-- Markup languages: Subject dedicated to learn about markup languages and some tools about frontend development.  
+- [Computer systems](systems/README.md): Subject dedicated to learn about things as hardware, software, administration of operative systems, networking...  
+- [Development enviroments](ets/README.md): Subject dedicated to learn about all things that complement the work of programming as IDE's, diagrams before programming. Also we will manage a simulation of a project.
+- [Markup languages](lnd/README.md): Subject dedicated to learn about markup languages and some tools about frontend development.  
 
 ## Some tools
 <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;

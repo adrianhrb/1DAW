@@ -1,0 +1,135 @@
+/* CSS Document */
+* {margin: 0;
+	padding: 100;
+ } 
+ 
+p {
+	 padding-bottom: 6px;
+	 padding-top: 6px;
+ }
+ 
+h1 {
+	 font-family: 'Times New Roman', Times, serif;
+	 padding-top: 40px;
+	 padding-left: 112px;
+	 color:#111111
+ }
+ 
+h2 {
+	 padding-top: 0px;
+	 padding-left: 112px;
+	 color: #b3b79b;
+ }
+ 
+h3 {
+	 color: #8D926A;
+	 padding-top: 15px;
+	 padding-bottom: 15px;
+	 display: flex;
+	 flex-direction: column;
+ }
+ 
+#caja_nav ul {
+	 padding: 16px 0 2px;
+	 margin-left: 160px;
+	 list-style-type: none;
+	 color: #bb6633;
+	 font-size: 100%;
+	 font-style: normal;
+	 font-weight: normal;
+	 font-variant: normal;
+ }
+ 
+li { 
+	 display: inline-flex; 
+ }
+ 
+li a {
+	 text-decoration: none;
+	 color: black;
+	 padding: .2em 1em;
+ }
+ 
+li a:hover {
+ color: #111111;
+ background-color: white;
+ }
+ 
+body {
+	 font-family:'Times New Roman', Times, serif;
+ }
+ 
+#principal {
+	 height: 399px;
+	 width: 741px;
+	 background-image: url(img/fondo.jpg);
+	 font-style: italic;
+ }
+ 
+#barrelance {
+	 height: 43px;
+	 width: 741px;
+ }
+ 
+#top_contenido {
+	 height: 135px;
+	 width: 741px;
+	 background-image: url(img/top.jpg);
+	 font-style: italic;
+	 font-size: small;
+	 text-align: justify;;
+	 text-justify: auto;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: flex-end;
+ }
+ 
+#principal_contenido {
+	 width: auto;
+	 height: auto;
+	 font-size: auto;
+	 background-image: url(img/body_tile.jpg);
+	 background-repeat: repeat-y;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: flex-end;
+ }
+ 
+#pie {
+	 height: 70px;
+	 padding-top: 10px;
+	 background-color: #8D926A;
+	 border-radius: 15px;
+	 color: white;
+	 text-align: center;
+	 position: absolute;
+	 width: 32%;
+ }
+ 
+#caja_nav {
+	 background-image: url(img/barra_enlace.jpg);
+	 background-repeat:no-repeat;
+ }
+ 
+#principal_contenido p {
+	 width: 20%;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+	 padding-left: 100px;
+ }
+ 
+#principal_contenido h3 {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+	 padding-left: 100px;
+ }
+ 
+#top_contenido p {
+	 width: 45%;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+	 padding-left: 140px;
+ }

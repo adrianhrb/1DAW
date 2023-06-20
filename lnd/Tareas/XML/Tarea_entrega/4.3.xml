@@ -1,0 +1,75 @@
+<!-- VERSIÓN SIN ATRIBUTOS -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT partido (juego*)>
+<!ELEMENT juego (local, visitante)>
+<!ELEMENT local (equipo, goles)>
+<!ELEMENT visitante (equipo, goles)>
+<!ELEMENT equipo (#PCDATA)>
+<!ELEMENT goles (#PCDATA)>
+]>
+
+<partido>
+    <juego>
+        <local>
+            <equipo>Water de Munich</equipo>
+            <goles>4</goles>
+        </local>
+        <visitante>
+            <equipo>Esteaua es del grifo</equipo>
+            <goles>2</goles>
+        </visitante>
+    </juego>
+</partido>
+
+
+
+
+<!-- VERSIÓN CON GOLES COMO ATRIBUTOS -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT partido (juego*)>
+<!ELEMENT juego (local, visitante)>
+<!ELEMENT local (equipo)>
+<!ELEMENT equipo (#PCDATA)>
+<!ELEMENT visitante (equipo)>
+<!ELEMENT equipo (#PCDATA)>
+<!ATTLIST equipo uniforme CDATA #IMPLIED>
+<!ATTLIST equipo goles CDATA #IMPLIED>
+]>
+
+<partido>
+    <juego>
+        <local>
+            <equipo uniforme="Verde" goles="4">Water de Munich</equipo>
+        </local>
+        <visitante>
+            <equipo uniforme="Blanco" goles="2">Esteaua es del grifo</equipo>
+        </visitante>
+    </juego>
+</partido>
+
+
+
+
+<!-- VERSIÓN CON TODO COMO ATRIBUTOS -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT partido (juego*)>
+<!ELEMENT juego (local, visitante)>
+<!ELEMENT local EMPTY>
+<!ELEMENT visitante EMPTY>
+<!ATTLIST local equipo CDATA #IMPLIED>
+<!ATTLIST local uniforme CDATA #IMPLIED>
+<!ATTLIST local goles CDATA #IMPLIED>
+<!ATTLIST visitante equipo CDATA #IMPLIED>
+<!ATTLIST visitante uniforme CDATA #IMPLIED>
+<!ATTLIST visitante goles CDATA #IMPLIED>
+]>
+
+<partido>
+    <juego>
+        <local equipo="Water de Munich" uniforme="Verde" goles="3" />
+        <visitante equipo="Esteaua es del grifo" uniforme="Blanco" goles="3" />
+    </juego>
+</partido>

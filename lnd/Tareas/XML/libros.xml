@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <librería>
+        <libro>
+            <ISBN>12423141234</ISBN>
+            <titulo>Curso intensivo XML</titulo>
+            <profundidad_tratamiento>Alta</profundidad_tratamiento>
+            <autor>Maria</autor>
+            <editorial>Edebe</editorial>
+            <fecha>19-12-21</fecha>
+            <web/>
+            <precio>15</precio>
+        </libro>
+        <libro>
+            <ISBN>435622565234</ISBN>
+            <titulo>XML y su aplicación</titulo>
+            <profundidad_tratamiento>Media</profundidad_tratamiento>
+            <autor>Maria</autor>
+            <editorial>Edebe</editorial>
+            <fecha>03-02-20</fecha>
+            <web/>
+            <precio>15</precio>
+        </libro>
+        <libro>
+            <ISBN>54763425</ISBN>
+            <titulo>XML etiquetas</titulo>
+            <profundidad_tratamiento>Alta</profundidad_tratamiento>
+            <autor>Maria</autor>
+            <editorial>Edebe</editorial>
+            <fecha>19-12-21</fecha>
+            <web/>
+            <precio>15</precio>
+        </libro>
+    </librería>
+    <librería>
+        <libro>
+            <ISBN>45674567</ISBN>
+            <titulo>Curso básico XML</titulo>
+            <profundidad_tratamiento>Baja</profundidad_tratamiento>
+            <autor>Luis</autor>
+            <editorial>Edebe</editorial>
+            <fecha>02-01-18</fecha>
+            <web/>
+            <precio>15</precio>
+        </libro>
+        <libro>
+            <ISBN>97874565</ISBN>
+            <titulo>XML en el mundo laboral</titulo>
+            <profundidad_tratamiento>Media</profundidad_tratamiento>
+            <autor>Luis</autor>
+            <editorial>Edebe</editorial>
+            <fecha>04-06-20</fecha>
+            <web/>
+            <precio>15</precio>
+        </libro>
+        <libro>
+            <ISBN>786544</ISBN>
+            <titulo>XML y DTD</titulo>
+            <profundidad_tratamiento>Alta</profundidad_tratamiento>
+            <autor>Luis</autor>
+            <editorial>Edebe</editorial>
+            <fecha>10-10-17</fecha>
+            <web/>
+            <precio>15</precio>
+        </libro>
+    </librería>
+</info>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "UT7_05.dtd">
+
+<pilotos>
+	<informacion>
+		<nombre>Lewis</nombre>
+		<apellidos>Davidson</apellidos>
+		<apellidos>Hamilton</apellidos>
+		<titulos>7</titulos>
+		<escuderia>
+			<nombre motor="mercedes">Mercedes</nombre>
+			<color>Gris</color>
+		</escuderia>
+	</informacion>
+	<informacion>
+		<nombre>Charles</nombre>
+		<apellidos>Perceval</apellidos>
+		<apellidos>Leclerc</apellidos>
+		<escuderia>
+			<nombre motor="ferrari">Ferrari</nombre>
+			<color>Rojo</color>
+		</escuderia>
+	</informacion>
+</pilotos>

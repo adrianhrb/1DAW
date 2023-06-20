@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario para sorteo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>SORTEO DE UNA FIGURA A TU ELECCION!!</h1>
+        
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a class="box" href="bien_web.html">Volver atras</a></li>
+            <li><a class="box" href="prueba@gmail.com">Contactanos!</a></li>
+        </ul>
+    </nav>
+    <section class="form-container">
+        <fieldset class="formulario">
+            <form action="/pagina-prueba" method="post">
+                <p>Nombre: <input type="text" name="nombre" size="25" placeholder="Escriba su nombre y apellidos" required></p>
+                <p>Email: <input type="email" name="email" size ="25" placeholder="Escriba su correo" required></p>
+                <p>Telefono movil: <input type="text" maxlength="9" placeholder= "Ej: 687143981" required></p>
+                <p>Asunto / Mensaje: <br><textarea class="area"></textarea></p>
+                <p><input class="envio" type="submit" placeholder="Enviar datos"></p>
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>

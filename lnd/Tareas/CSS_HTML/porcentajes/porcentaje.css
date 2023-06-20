@@ -1,0 +1,17 @@
+.header, .page, .footer {
+    width: 100%;
+    background: grey;
+}
+
+.menu, .content {
+    display: inline-block;
+}
+
+.menu {
+    background: blue;
+}
+
+.content {
+    background: lightgray;
+    width: 70%;
+}

@@ -1,0 +1,7 @@
+Ejercicio 2:
+    1. /ies/modulos/modulo/nombre
+    2. /ies/modulos/modulo[ciclo = 'ASIR']
+    3. /ies/modulos/modulo[curso = 2]/nombre
+    4. /ies/modulos/modulo[horasSemanales < 5]/nombre
+    5. /ies/modulos/modulo[ciclo = 'ASIR' and curso = 1]/nombre
+    6. /ies/modulos/modulo[horasSemanales > 3]/horasSemanales

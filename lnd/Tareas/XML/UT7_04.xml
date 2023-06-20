@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+	<tienda>
+		<nombre>M&amp;M </nombre>
+		<direccion>Centro Comercial Girasol, Av.Marítima, 106</direccion>
+	</tienda>
+	<producto>
+		<precio>200</precio>
+		<código>35ab05</código>
+		<nombre>Gafas</nombre>
+	</producto>
+	<producto>
+		<precio>50</precio>
+		<código>050005</código>
+		<nombre>Lente Convergente</nombre>
+	</producto>
+</catalogo>

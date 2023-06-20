@@ -1,0 +1,7 @@
+#ElQuijote:after {
+    content: "SEGUIR LEYENDO";
+}
+
+#ElQuijote::first-letter {
+    font-size: 3em;
+}

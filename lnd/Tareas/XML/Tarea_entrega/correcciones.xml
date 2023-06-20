@@ -1,0 +1,498 @@
+<!-- ************************************************ -->
+
+<!-- LA TAREA SE PRESENTA DE FORMA QUE, CON COMENTARIOS
+	SE SEPARAN LOS BLOQUES DE EJERCICIOS. DENTRO DE DICHOS
+	BLOQUES SE ESCRIBE DE FORMA QUE PRIMERO SE VE EL 
+	EJERCICIO CON ERROR Y DEBAJO LA CORRECCIÓN AL CÓDIGO
+	JUNTO CON UN COMENTARIO EN EL QUE SE INDICA QUÉ SE HA
+	CORREGIDO -->
+
+<!-- ************************************************ -->
+
+
+<!-- BLOQUE DE EJERCICIOS Nº2 -->
+
+<!-- Ejercicio número 2 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE letras [
+<!ELEMENT letras (letra*)>
+<!ELEMENT letra (#PCDATA)>
+]>
+<letras>
+<letra>m</letra>
+<letra>uve doble</letra>
+</letras>
+
+<!-- Corrección ejercicio 2 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE letras [
+<!ELEMENT letras (letra)>
+<!ELEMENT letra (#PCDATA)>
+]>
+<letras>
+<letra>m</letra> <!-- Borramos una etqieuta ya que solo puedo aparecer una -->
+</letras>
+
+
+
+
+<!-- Ejercicio número 3 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE animales [
+<!ELEMENT animales (animal*)> 
+<!ELEMENT animal (#PCDATA)>
+]>
+<animales>
+	<perro>Caniche</perro>
+	<gato>Siamés</gato> 
+</animales>
+
+<!-- Corrercción número 3 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE animales [
+<!ELEMENT animales (animal*)> 
+<!ELEMENT animal (#PCDATA)>
+]>
+<animales>
+	<animal>Caniche</animal>
+	<animal>Siamés</animal> 
+</animales>
+
+
+
+
+<!-- Ejercicio número 4 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE escritores [
+<!ELEMENT escritores (escritor*)>
+<!ELEMENT escritor (nombre, nacimiento)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nacimiento (#PCDATA)>
+]>
+<escritores>
+	<escritor>
+		<nombre>Mario Vargas Llosa</nombre>
+		<nacimiento>28 de marzo de 1936</nacimiento>
+	</escritor>
+	<escritor>
+		<nacimiento>1 de abril de 1929</nacimiento>
+		<nombre>Milan Kundera</nombre> <!--Debe aparecer primero nombre y no nacimiento-->
+	</escritor>
+</escritores>
+
+
+
+<!-- Corrección número 4-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE escritores [
+<!ELEMENT escritores (escritor*)>
+<!ELEMENT escritor (nombre, nacimiento)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nacimiento (#PCDATA)>
+]>
+<escritores>
+	<escritor>
+		<nombre>Mario Vargas Llosa</nombre>
+		<nacimiento>28 de marzo de 1936</nacimiento>
+	</escritor>
+	<escritor>
+		<nombre>Milan Kundera</nombre> <!--Debe aparecer primero nombre y no nacimiento-->
+		<nacimiento>1 de abril de 1929</nacimiento>
+	</escritor>
+</escritores>
+
+
+
+
+<!-- Ejercicio número 6 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musicos [
+<!ELEMENT musicos (musico*)>
+<!ELEMENT musico ((nombre | apodo), fechaNacimiento)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apodo (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+]>
+<musicos>
+	<musico>
+		<nombre>Antonio Vivaldi</nombre>
+		<apodo>El cura pelirrojillo</apodo>
+		<fechaNacimiento>4 de marzo de 1678</fechaNacimiento>
+	</musico>
+	<musico>
+		<nombre>Johann Sebastian Bach</nombre>
+		<apodo>El viejo peluca</apodo> <!--Solo puede salir un elemento entre nombre o apodo y aquí salen los dos-->
+		<fechaNacimiento>21 de marzo de 1685</fechaNacimiento>
+	</musico>
+</musicos>
+
+
+<!-- Corrección número 6 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musicos [
+<!ELEMENT musicos (musico*)>
+<!ELEMENT musico ((nombre | apodo), fechaNacimiento)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apodo (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+]>
+<musicos>
+	<musico>
+		<nombre>Antonio Vivaldi</nombre> <!-- Hay que eliminar nombre o apodo, ya que solo puede aparecer uno de ellos -->
+		<fechaNacimiento>4 de marzo de 1678</fechaNacimiento>
+	</musico>
+	<musico>
+		<apodo>El viejo peluca</apodo> <!--Solo puede salir un elemento entre nombre o apodo y aquí salen los dos-->
+		<fechaNacimiento>21 de marzo de 1685</fechaNacimiento>
+	</musico>
+</musicos>
+
+
+
+<!-- BLOQUE DE EJERCICIOS Nº2 -->
+
+<!-- Ejercicio número 1 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE favoritos [
+	<!ELEMENT favoritos (marcador)>
+	<!ELEMENT marcador (nombre, uri)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT uri (#PCDATA)>
+]>
+<marcadores>
+	<marcador>
+		<nombre>W3C</nombre>
+		<uri>http://www.w3.org/</uri>
+	</marcador>
+	<marcador>
+		<nombre>Web Hypertext Application Technology Working Group
+		(WHATWG)</nombre>
+		<uri>http://www.whatwg.org/</uri>
+	</marcador>
+</marcadores>
+
+
+<!-- Corrección número 1 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE favoritos [
+	<!ELEMENT favoritos (marcador*)> <!-- Añadimos un * al final para indicar que marcador puede aparecer múltiples veces -->
+	<!ELEMENT marcador (nombre, uri)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT uri (#PCDATA)>
+]>
+<marcadores>
+	<marcador>
+		<nombre>W3C</nombre>
+		<uri>http://www.w3.org/</uri>
+	</marcador>
+	<marcador>
+		<nombre>Web Hypertext Application Technology Working Group
+		(WHATWG)</nombre>
+		<uri>http://www.whatwg.org/</uri>
+	</marcador>
+</marcadores>
+
+
+
+
+<!-- Ejercicio número 2 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE efemerides [
+<!ELEMENT efemerides (efemeride)>
+<!ELEMENT efemeride (fecha, hecho)>
+]>
+<efemerides>
+	<efemeride>
+		<fecha>20 de julio de 1969</fecha>
+		<hecho>Llegada del hombre a la Luna</hecho>
+	</efemeride>
+	<efemeride>
+		<fecha>12 de octubre de 1492</fecha>
+		<hecho>Llegada de Colón a América</hecho>
+	</efemeride>
+	<efemeride>
+		<fecha>6 de abril de 1909</fecha>
+		<hecho>llegada de Robert Peary al Polo Norte</hecho>
+	</efemeride>
+</efemerides>
+
+
+<!-- Corrección número 2 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE efemerides [
+<!ELEMENT efemerides (efemeride*)> <!-- Añadimos asterisco para que puedan aparecer más veces -->
+<!ELEMENT efemeride (fecha, hecho)>
+<!ELEMENT fecha #PCDATA>
+]>
+<efemerides>
+	<efemeride>
+		<fecha>20 de julio de 1969</fecha>
+		<hecho>Llegada del hombre a la Luna</hecho>
+	</efemeride>
+	<efemeride>
+		<fecha>12 de octubre de 1492</fecha>
+		<hecho>Llegada de Colón a América</hecho>
+	</efemeride>
+	<efemeride>
+		<fecha>6 de abril de 1909</fecha>
+		<hecho>llegada de Robert Peary al Polo Norte</hecho>
+	</efemeride>
+</efemerides>
+
+
+
+
+<!-- Ejercicio número 3 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuertos [
+<!ELEMENT aeropuertos (aeropuerto*)>
+<!ELEMENT aeropuerto (nombre, cerrado)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cerrado (#PCDATA)>
+]>
+<aeropuertos>
+	<aeropuerto>
+		<nombre>Berlín Schönefeld (SFX)</nombre>
+	</aeropuerto>
+	<aeropuerto>
+		<nombre>Berlín Tempelhof (THF)</nombre>
+	<cerrado />
+	</aeropuerto>
+</aeropuertos>
+
+
+<!-- Corrección número 3 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuertos [
+<!ELEMENT aeropuertos (aeropuerto*)>
+<!ELEMENT aeropuerto (nombre, cerrado)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cerrado EMPTY> <!-- La solución en el DDT sería
+									declarar este como empty -->
+]>
+<aeropuertos>
+	<aeropuerto>
+		<nombre>Berlín Schönefeld (SFX)</nombre>
+	</aeropuerto>
+	<aeropuerto>
+		<nombre>Berlín Tempelhof (THF)</nombre>
+	<cerrado /> <!-- EL error está aquí, ya que cerrado debería
+					ser un PCDATA y en este caso está vacío -->
+	</aeropuerto>
+</aeropuertos>
+
+
+
+
+<!-- Ejercicio número 4 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vuelos [
+<!ELEMENT vuelos (vuelo*)>
+<!ELEMENT vuelo (origen, destino)>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+]>
+<vuelos>
+	<vuelo>
+		<origen>Valencia (VLC)</origen>
+		<destino>Londres Heathrow (LHR)</destino>
+	</vuelo>
+	<vuelo>
+		<destino>Berlín Schönefeld (SFX)</destino>
+		<origen>París Charles de Gaulle (CDG)</origen>
+	</vuelo>
+</vuelos>
+
+
+<!-- Corrección número 4 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vuelos [
+<!ELEMENT vuelos (vuelo*)>
+<!ELEMENT vuelo (origen, destino)>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+]>
+<vuelos>
+	<vuelo>
+		<origen>Valencia (VLC)</origen>
+		<destino>Londres Heathrow (LHR)</destino>
+	</vuelo>
+	<vuelo>
+	<!-- Ponemos en este caso el origen y el destino al revés ya que
+		en el DDT aparecen en este orden -->
+		<origen>París Charles de Gaulle (CDG)</origen> 
+		<destino>Berlín Schönefeld (SFX)</destino>
+	</vuelo>
+</vuelos>
+
+
+
+
+<!-- Ejercicio número 5 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE colores [
+<!ELEMENT colores (color*)>
+<!ELEMENT nombreSvg (#PCDATA)>
+<!ELEMENT rgb (#PCDATA)>
+<!ELEMENT cmyk (#PCDATA)>
+]>
+<colores>
+	<color>
+		<nombreSvg>Purple</nombreSvg>
+		<codigo>
+			<rgb>#800080</rgb>
+		</codigo>
+	</color>
+	<color>
+		<nombreSvg>Purple</nombreSvg>
+		<codigo>
+			<cmyk>#00FF007F</cmyk>
+		</codigo>
+	</color>
+</colores>
+
+
+<!-- Corrección número 5 -->
+
+<!-- El fallo es que en el DDT no aparece la referencia
+	a código, que además se nombre de dos formas distintas
+	en los dos "color" -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE colores [
+<!ELEMENT colores (color*)>
+<!ELEMENT nombreSvg (#PCDATA)>
+<!-- Corrigiendo el DDT sería: -->
+<!ELEMENT codigo (rgb)>
+<!ELEMENT rgb (#PCDATA)>
+]>
+<colores>
+	<color>
+		<nombreSvg>Purple</nombreSvg>
+		<codigo>
+			<rgb>#800080</rgb>
+		</codigo>
+	</color>
+	<color>
+		<nombreSvg>Purple</nombreSvg>
+		<codigo>
+			<rgb>#00FF007F</rgb> <!-- y cambiamos este código a rgb -->
+		</codigo>
+	</color>
+</colores>
+
+
+
+
+
+
+
+
+<!-- BLOQUE DE EJERCICIOS 3 -->
+
+<!-- Ejercicio número 1 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona [
+<!ELEMENT persona EMPTY>
+<!ATTLIST persona nombre CDATA #IMPLIED>
+]>
+<persona dni="03141592E" />
+
+
+<!-- Corrección número 1 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona [
+<!ELEMENT persona EMPTY>
+<!ATTLIST persona nombre CDATA #IMPLIED>
+]>
+<persona nombre="03141592E" /> <!-- Este no puede ser dni y debe ser nombre -->
+
+
+
+
+<!-- Ejercicio número 2 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuadros [
+<!ELEMENT cuadros (cuadro*)>
+<!ELEMENT cuadro EMPTY>
+<!ATTLIST cuadro titulo ID #REQUIRED>
+<!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+<cuadros>
+	<cuadro titulo="Adán y Eva" autor="Alberto Durero" />
+	<cuadro autor="Lucas Cranach, el viejo" titulo="Adán y
+	Eva" />
+</cuadros>
+
+
+<!-- Corrección número 2 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuadros [
+<!ELEMENT cuadros (cuadro*)>
+<!ELEMENT cuadro EMPTY>
+<!ATTLIST cuadro titulo ID #REQUIRED>
+<!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+<cuadros>
+	<cuadro titulo="Adán y Eva" autor="Alberto Durero" />
+	<cuadro autor="Lucas Cranach, el viejo" titulo="Adán y
+	Eva" /> <!-- Se repite el titulo en ambos cuadros y además no están en el mismo orden -->
+	<!-- Además en los ID no se pueden colocar espacios -->
+</cuadros> 
+
+
+
+
+<!-- Ejercicio número 3 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT futbol ((jugador|equipo)*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+<!ELEMENT equipo EMPTY>
+<!ATTLIST equipo nombre CDATA #REQUIRED>
+<!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+<futbol>
+	<jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+	<jugador nombre="Edison Arantes do Nascimento"
+	codigo="ean" />
+	<jugador nombre="Diego Armando Maradona" codigo="dam" />
+	<jugador nombre="Johan Cruyff" codigo="jc" />
+	<equipo nombre="Società Sportiva Calcio Napoli"
+	jugadores="Maradona" />
+	<equipo nombre="Futbol Club Barcelona" jugadores="Cruyff,
+	Maradona" />
+</futbol>
+
+
+<!-- Corrección número 3 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT futbol ((jugador|equipo)*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+<!-- Además eliminamos del DDT las especificaciones del equipo -->
+]>
+<futbol>
+	<jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+	<jugador nombre="Edison Arantes do Nascimento"
+	codigo="ean" />
+	<jugador nombre="Diego Armando Maradona" codigo="dam" />
+	<jugador nombre="Johan Cruyff" codigo="jc" />
+	<!-- Eliminamos a equipo porque en el DDT se indica que
+		solo puede aparecer uno de ellos tantas veces como sea 
+		pero no pueden aparecer ambos a la vez -->
+
+</futbol>

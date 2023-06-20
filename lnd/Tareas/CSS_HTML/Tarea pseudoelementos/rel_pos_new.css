@@ -1,0 +1,32 @@
+#div1 {
+    width: 100%;
+    height: 250px;
+    background-color:aquamarine ;
+    position: absolute;
+}
+
+#div2 {
+    width: 50%;
+    height: 150px;
+    background-color: gray;
+    position: relative;
+    top: 10px;
+    left: 25%;
+}
+
+.div3 {
+    width:auto;
+    height:auto;
+    background-color: rgb(183, 0, 255);
+    top: -29%;
+    left: 1%;
+}
+
+.div4 {
+    width: 33%;
+    height: 33%;
+    background-color: greenyellow;
+    position: relative;
+    top: -62%;
+    left:66%;
+}

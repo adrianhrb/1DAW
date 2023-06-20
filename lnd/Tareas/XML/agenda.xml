@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "agenda.dtd">
+<agenda>
+	<contacto>
+		<nombre>Juan</nombre>
+		<apellido>Rodriguez</apellido>
+		<apellido>Santana</apellido>
+		<telefono pais="España">+34658784523</telefono>
+		<email>juanro@loquesea.com</email>
+		<direccion>
+			<calle>C/ Lechuga</calle>
+			<numero>25</numero>
+			<cp>303040</cp>
+		</direccion>
+	</contacto>
+	
+		<contacto>
+		<nombre>Juan</nombre>
+		<apellido>Rodriguez</apellido>
+		<apellido>Santana</apellido>
+		<telefono pais="España">+34658784523</telefono>
+		<email>juanro@loquesea.com</email>
+		<direccion>
+			<calle>C/ Lechuga</calle>
+			<numero>25</numero>
+			<cp>303040</cp>
+		</direccion>
+	</contacto>
+</agenda>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT pilotos (informacion*) >
+<!ELEMENT informacion (nombre, apellido+,escuderia?, títulos) >
+
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT apellido (#PCDATA) >
+<!ELEMENT titulos (#PCDATA) >
+
+<!ELEMENT escuderia (nombre*, color) >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT color (#PCDATA) >
+
+<!ATTLIST nombre motor (honda|mercedes|ferrari|renault) #REQUIRED>
+
+

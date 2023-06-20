@@ -1,0 +1,22 @@
+.flex-container{
+	max-width:960px;
+	width:90%;
+	list-style-type:none;
+	margin:20px auto;
+	padding:0;
+	background-color:midnightblue;
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item{
+	height:200px;
+	width:200px;
+	line-height:200px;
+	font-size:20px;
+	background-color:steelblue;
+	color:#fff;
+	text-align:center;
+	margin:5px 2px;	
+}

@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: darkslateblue;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+
+nav ul {
+    background-color: violet;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline-flex;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover {
+    background-color: thistle;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    width: 1000px;
+    height: 700px;
+}
+
+body {
+    background-color:darkslateblue;
+}
+

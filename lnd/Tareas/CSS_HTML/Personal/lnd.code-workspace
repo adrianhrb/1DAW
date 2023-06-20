@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "lnd",
+			"path": ".."
+		},
+		{
+			"name": "img",
+			"path": "../../Escritorio/Página hotel/img"
+		}
+	],
+	"settings": {}
+}

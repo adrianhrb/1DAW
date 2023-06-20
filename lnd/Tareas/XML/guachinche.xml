@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE guachinche[
+<!ELEMENT guachinche (entrantes, bebidas, comida, postres)>
+<!ELEMENT entrantes (croquetas, queso, escaldon, salpicon)>
+<!ELEMENT bebidas (nestea, coca-cola, vino*)>
+<!ELEMENT comida (carne, ensalada, papas, pescado)>
+<!ELEMENT postres (rosquete, polvito, queque)>
+<!ELEMENT croquetas (#PCDATA)>
+<!ELEMENT queso (#PCDATA)>
+<!ELEMENT escaldon (#PCDATA)>
+<!ELEMENT salpicon (#PCDATA)>
+<!ELEMENT nestea EMPTY>
+<!ELEMENT coca-cola (#PCDATA)>
+<!ELEMENT vino (#PCDATA)>
+<!ELEMENT carne (#PCDATA)>
+<!ELEMENT ensalada (#PCDATA)>
+<!ELEMENT papas (#PCDATA)>
+<!ELEMENT pescado (#PCDATA)>
+<!ELEMENT rosquete (#PCDATA)>
+<!ELEMENT polvito (#PCDATA)>
+<!ELEMENT queque (#PCDATA)>
+]>
+
+<guachinche>
+    <entrantes>
+        <croquetas>Atún</croquetas>
+        <queso>Asado</queso>
+        <escaldon>Con mojo</escaldon>
+        <salpicon>Pulpo</salpicon>
+    </entrantes>
+    <bebidas>
+        <nestea />
+        <coca-cola>Zero</coca-cola>
+        <vino>Blanco Afrutado</vino>
+        <vino>Tinto</vino>
+    </bebidas>
+    <comida>
+        <carne>cabra</carne>
+        <ensalada>mixta</ensalada>
+        <papas>fritas</papas>
+        <pescado>vieja</pescado>
+    </comida>
+    <postres>
+        <rosquete>Lagunero</rosquete>
+        <polvito>Uruguayo</polvito>
+        <queque>Gofio</queque>
+    </postres>
+</guachinche>

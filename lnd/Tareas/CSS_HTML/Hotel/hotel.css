@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+header{
+    text-align: center;
+    background-color:black;
+    color:white;
+    padding: 20px;
+}
+
+fieldset{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+nav ul {
+    background-color: #e7d1b0;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline-flex;
+}
+nav a {
+    text-decoration: none;
+    color: black ;
+    padding: 10px;
+    width: 150px;
+}
+
+nav li:hover {
+    background-color: white;
+}
+
+#sec {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+body {
+    background-color:azure;
+}
+
+input{
+    background-color: #e7d1b0;
+    text-align: center;
+    margin: 5px;
+}
+
+
+select{
+    width: 15%;
+    margin: 5px;
+    background-color: #e7d1b0;
+}
+
+textarea{
+    background-color: #e7d1b0;
+}
+
+#center{
+    text-align: center;
+    margin: 10px;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form{
+    text-align: center;
+}

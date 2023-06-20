@@ -1,0 +1,25 @@
+#noticia {
+    background:linear-gradient(to top, greenyellow, rgb(162, 0, 255));
+    padding: 15%;
+    color: black;
+}
+
+h2 {
+    color: blueviolet;
+
+}
+
+p~h2 {
+    background-color: red;
+}
+:nth-child(10) {
+    color:green
+}
+
+:first-child {
+    color:red
+}
+
+:last-child {
+    color:blue
+}
