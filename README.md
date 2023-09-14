@@ -4,7 +4,7 @@
 </div>  
 
 ## About repo
-Repositorie dedicated to the first year subjects of higher grade training cycle of web development. It will be structured in different folders for each subject with their examples, notes, excercises and mini-projects.  
+Repo dedicated to the first year subjects of higher grade training cycle of web development. It will be structured in different folders for each subject with their examples, notes, excercises and mini-projects.  
 
 ## Subjects
 - [Programming](pro/README.md): Subject dedicated to learn programmig from 0. We are going to use Python language and we will learn from [aprendepython](https://aprendepython.es/), a web/course made by our [teacher](https://github.com/sdelquin).
